@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aside - Free Bulma template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container1">
+                <h1 class="title">
+                    What kind of bean are you?
+                </h1>
+                <h2 class="subtitle">
+                    Lima, kidney, pinto, who knows?
+                </h2>
+                <form id="search-form"> 
+                    <input type="text" id="query" class="search-input" placeholder="Which bean are you?">
+                    <div class="divider"></div>
+                    <input type="submit" value="Go">
+                    </form>
+            </div>
+        </div>
+        <div id="results-container" class="hidden">
+            <div id="slideshow"></div>
+            <button id="stop">STOP</button>
+          </div>
+    </section>
+    <div class="progress-container">
+        <progress class="progress is-small is-primary" max="100">15%</progress>
+        <progress class="progress is-danger" max="100">30%</progress>
+        <progress class="progress is-medium is-dark" max="100">45%</progress>
+        <progress class="progress is-large is-info" max="100">60%</progress>
+    </div>
+    <div class="columns">
+        <!-- Aside nav drawer -->
+        <aside class="column is-3 is-hidden-mobile">
+            <div class="panel">
+                <p class="panel-heading has-text-centered">Were all human beans!</p>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-home"></i>
+                    </span>
+                    <span class="name">Bean types</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </span>
+                    <span class="name">Bean events</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-th-list"></i>
+                    </span>
+                    <span class="name">Bean recipes</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-folder-o"></i>
+                    </span>
+                    <span class="name">Folders</span>
+                </a>
+                <hr>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-comment-o"></i>
+                    </span>
+                    <span class="name">Comments</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="name">Mail</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-rss"></i>
+                    </span>
+                    <span class="name">RSS Feed</span>
+                </a>
+                <a class="panel-block">
+                    <span class="panel-icon">
+                        <i class="fa fa-database"></i>
+                    </span>
+                    <span class="name">Data</span>
+                </a>
+            </div>
+        </aside>
+        <section class="column">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification">
+                                <img src="https://post.healthline.com/wp-content/uploads/2020/09/four-bowls-of-beans-thumb.jpg">
+                                <p class="title">What you bean doing?...</p>
+                                <p class="subtitle">The latest news about the beans.</p>
+                            </article>
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">...tiles</p>
+                                <p class="subtitle">Bottom tile</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Bean Recipes</p>
+                                <p class="subtitle">How to cook the right bean.</p>
+                                <figure class="image is-4by3">
+                                    <img src="https://post.healthline.com/wp-content/uploads/2020/09/four-bowls-of-beans-thumb.jpg">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                            <p class="title">Join Mailing List</p>
+                            <p class="subtitle">subscribe and stay up to date </p>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success">
+                        <div class="content">
+                            <p class="title">Bean Events </p>
+                            <p class="subtitle">The nearest events with beans</p>
+                            <figure class="image2beans">
+                                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/03/beans.jpg">
+                            </figure>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Bulma</strong> by
+                    <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+                    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
